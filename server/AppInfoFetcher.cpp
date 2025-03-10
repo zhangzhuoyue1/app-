@@ -22,11 +22,26 @@ void AppInfoFetCher::fetchAllPackages()
     ParsePackageName(strRawOutput);
 }
 
-
-
 std::string AppInfoFetCher::getUidByPackage(const std::string &packageName)
 {
-    return "";
+    //获取uid命令
+    //const std::string cmd = "shell dumpsys package " + packageName + " | egrep 'userId=|uid='";
+
+    const std::string cmd = "shell dumpsys package " + packageName + " | egrep 'userId='";
+
+    const std::string strRawOutput = ExecuteAdbCommand(cmd);
+
+    return strRawOutput;
+}
+
+//获取当前已缓存的包名列表
+std::vector<std::string>AppInfoFetCher::getAllPackageNames() const
+{
+    if(m_vecPackageNames.empty())
+    {
+        return std::vector<std::string>();
+    }
+    return m_vecPackageNames;
 }
 
 //执行adb命令
@@ -64,9 +79,14 @@ void AppInfoFetCher::ParsePackageName(const std::string &rawOutput)
         std::smatch matches;
         if (std::regex_match(line, matches, pattern)) 
         {
-            if(matches.size()== 2)
+            const std::string& pkg = matches[1].str();
+            
+            // 检查包名是否包含android（不区分大小写）
+            if (pkg.find("android") == std::string::npos && 
+               pkg.find("ANDROID") == std::string::npos) 
             {
-                m_vecPackageNames.push_back(matches[1]);
+
+                m_vecPackageNames.push_back(pkg);
             }
         }   
     }

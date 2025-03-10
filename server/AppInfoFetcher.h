@@ -9,6 +9,7 @@ public:
     void fetchAllPackages();    //全量获取包名并构建映射
     std::string getUidByPackage(const std::string &packageName);    //通过包名获取uid
     std::vector<std::string> getAllPackageNames() const;            //获取当前已缓存的包名列表
+    
 private:
     std::string m_strAdbPath;   //adb路径
     std::vector<std::string> m_vecPackageNames;   //包名列表
