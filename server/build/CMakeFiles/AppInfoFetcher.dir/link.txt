@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic CMakeFiles/AppInfoFetcher.dir/AppInfoFetcher.cpp.o CMakeFiles/AppInfoFetcher.dir/main.cpp.o -o AppInfoFetcher 
