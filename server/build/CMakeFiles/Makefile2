@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/zzy/c++/毕业设计/app-/server/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/AppInfoFetcher.dir/all
+all: CMakeFiles/Server.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/AppInfoFetcher.dir/clean
+clean: CMakeFiles/Server.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/AppInfoFetcher.dir
+# Target rules for target CMakeFiles/Server.dir
 
 # All Build rule for target.
-CMakeFiles/AppInfoFetcher.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppInfoFetcher.dir/build.make CMakeFiles/AppInfoFetcher.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppInfoFetcher.dir/build.make CMakeFiles/AppInfoFetcher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/zzy/c++/毕业设计/app-/server/build/CMakeFiles --progress-num=1,2,3 "Built target AppInfoFetcher"
-.PHONY : CMakeFiles/AppInfoFetcher.dir/all
+CMakeFiles/Server.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/zzy/c++/毕业设计/app-/server/build/CMakeFiles --progress-num=1,2,3,4 "Built target Server"
+.PHONY : CMakeFiles/Server.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/AppInfoFetcher.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/c++/毕业设计/app-/server/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/AppInfoFetcher.dir/all
+CMakeFiles/Server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/c++/毕业设计/app-/server/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/c++/毕业设计/app-/server/build/CMakeFiles 0
-.PHONY : CMakeFiles/AppInfoFetcher.dir/rule
+.PHONY : CMakeFiles/Server.dir/rule
 
 # Convenience name for target.
-AppInfoFetcher: CMakeFiles/AppInfoFetcher.dir/rule
-.PHONY : AppInfoFetcher
+Server: CMakeFiles/Server.dir/rule
+.PHONY : Server
 
 # clean rule for target.
-CMakeFiles/AppInfoFetcher.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppInfoFetcher.dir/build.make CMakeFiles/AppInfoFetcher.dir/clean
-.PHONY : CMakeFiles/AppInfoFetcher.dir/clean
+CMakeFiles/Server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/clean
+.PHONY : CMakeFiles/Server.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -117,65 +117,89 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named AppInfoFetcher
+# Target rules for targets named Server
 
 # Build rule for target.
-AppInfoFetcher: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AppInfoFetcher
-.PHONY : AppInfoFetcher
+Server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Server
+.PHONY : Server
 
 # fast build rule for target.
-AppInfoFetcher/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppInfoFetcher.dir/build.make CMakeFiles/AppInfoFetcher.dir/build
-.PHONY : AppInfoFetcher/fast
+Server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/build
+.PHONY : Server/fast
 
-AppInfoFetcher.o: AppInfoFetcher.cpp.o
-.PHONY : AppInfoFetcher.o
-
-# target to build an object file
-AppInfoFetcher.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppInfoFetcher.dir/build.make CMakeFiles/AppInfoFetcher.dir/AppInfoFetcher.cpp.o
-.PHONY : AppInfoFetcher.cpp.o
-
-AppInfoFetcher.i: AppInfoFetcher.cpp.i
-.PHONY : AppInfoFetcher.i
-
-# target to preprocess a source file
-AppInfoFetcher.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppInfoFetcher.dir/build.make CMakeFiles/AppInfoFetcher.dir/AppInfoFetcher.cpp.i
-.PHONY : AppInfoFetcher.cpp.i
-
-AppInfoFetcher.s: AppInfoFetcher.cpp.s
-.PHONY : AppInfoFetcher.s
-
-# target to generate assembly for a file
-AppInfoFetcher.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppInfoFetcher.dir/build.make CMakeFiles/AppInfoFetcher.dir/AppInfoFetcher.cpp.s
-.PHONY : AppInfoFetcher.cpp.s
-
-main.o: main.cpp.o
-.PHONY : main.o
+src/AppInfoFetcher.o: src/AppInfoFetcher.cpp.o
+.PHONY : src/AppInfoFetcher.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppInfoFetcher.dir/build.make CMakeFiles/AppInfoFetcher.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/AppInfoFetcher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.o
+.PHONY : src/AppInfoFetcher.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/AppInfoFetcher.i: src/AppInfoFetcher.cpp.i
+.PHONY : src/AppInfoFetcher.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppInfoFetcher.dir/build.make CMakeFiles/AppInfoFetcher.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/AppInfoFetcher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.i
+.PHONY : src/AppInfoFetcher.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/AppInfoFetcher.s: src/AppInfoFetcher.cpp.s
+.PHONY : src/AppInfoFetcher.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppInfoFetcher.dir/build.make CMakeFiles/AppInfoFetcher.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/AppInfoFetcher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.s
+.PHONY : src/AppInfoFetcher.cpp.s
+
+src/TrafficCapture_.o: src/TrafficCapture_.cpp.o
+.PHONY : src/TrafficCapture_.o
+
+# target to build an object file
+src/TrafficCapture_.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/TrafficCapture_.cpp.o
+.PHONY : src/TrafficCapture_.cpp.o
+
+src/TrafficCapture_.i: src/TrafficCapture_.cpp.i
+.PHONY : src/TrafficCapture_.i
+
+# target to preprocess a source file
+src/TrafficCapture_.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/TrafficCapture_.cpp.i
+.PHONY : src/TrafficCapture_.cpp.i
+
+src/TrafficCapture_.s: src/TrafficCapture_.cpp.s
+.PHONY : src/TrafficCapture_.s
+
+# target to generate assembly for a file
+src/TrafficCapture_.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/TrafficCapture_.cpp.s
+.PHONY : src/TrafficCapture_.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -185,13 +209,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... AppInfoFetcher"
-	@echo "... AppInfoFetcher.o"
-	@echo "... AppInfoFetcher.i"
-	@echo "... AppInfoFetcher.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Server"
+	@echo "... src/AppInfoFetcher.o"
+	@echo "... src/AppInfoFetcher.i"
+	@echo "... src/AppInfoFetcher.s"
+	@echo "... src/TrafficCapture_.o"
+	@echo "... src/TrafficCapture_.i"
+	@echo "... src/TrafficCapture_.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

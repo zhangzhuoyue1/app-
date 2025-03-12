@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.o CMakeFiles/Server.dir/src/TrafficCapture_.cpp.o CMakeFiles/Server.dir/src/main.cpp.o -o Server 

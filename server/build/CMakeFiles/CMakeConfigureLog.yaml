@@ -527,3 +527,40 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/spdlog/spdlogConfig.cmake:40 (find_package)"
+      - "CMakeLists.txt:3 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/zzy/c++/\u6bd5\u4e1a\u8bbe\u8ba1/app-/server/build/CMakeFiles/CMakeScratch/TryCompile-XnQeDX"
+      binary: "/home/zzy/c++/\u6bd5\u4e1a\u8bbe\u8ba1/app-/server/build/CMakeFiles/CMakeScratch/TryCompile-XnQeDX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/zzy/c++/毕业设计/app-/server/build/CMakeFiles/CMakeScratch/TryCompile-XnQeDX'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cc373/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cc373.dir/build.make CMakeFiles/cmTC_cc373.dir/build
+        gmake[1]: 进入目录“/home/zzy/c++/毕业设计/app-/server/build/CMakeFiles/CMakeScratch/TryCompile-XnQeDX”
+        Building C object CMakeFiles/cmTC_cc373.dir/src.c.o
+        /usr/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_cc373.dir/src.c.o -c /home/zzy/c++/毕业设计/app-/server/build/CMakeFiles/CMakeScratch/TryCompile-XnQeDX/src.c
+        Linking C executable cmTC_cc373
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc373.dir/link.txt --verbose=1
+        /usr/bin/gcc -rdynamic CMakeFiles/cmTC_cc373.dir/src.c.o -o cmTC_cc373 
+        gmake[1]: 离开目录“/home/zzy/c++/毕业设计/app-/server/build/CMakeFiles/CMakeScratch/TryCompile-XnQeDX”
+        
+      exitCode: 0
+...

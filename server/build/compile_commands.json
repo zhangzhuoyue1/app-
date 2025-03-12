@@ -1,14 +1,20 @@
 [
 {
   "directory": "/home/zzy/c++/毕业设计/app-/server/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/AppInfoFetcher.dir/AppInfoFetcher.cpp.o -c /home/zzy/c++/毕业设计/app-/server/AppInfoFetcher.cpp",
-  "file": "/home/zzy/c++/毕业设计/app-/server/AppInfoFetcher.cpp",
-  "output": "CMakeFiles/AppInfoFetcher.dir/AppInfoFetcher.cpp.o"
+  "command": "/usr/bin/g++  -I/home/zzy/c++/毕业设计/app-/server/./include -g -o CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.o -c /home/zzy/c++/毕业设计/app-/server/src/AppInfoFetcher.cpp",
+  "file": "/home/zzy/c++/毕业设计/app-/server/src/AppInfoFetcher.cpp",
+  "output": "CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.o"
 },
 {
   "directory": "/home/zzy/c++/毕业设计/app-/server/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/AppInfoFetcher.dir/main.cpp.o -c /home/zzy/c++/毕业设计/app-/server/main.cpp",
-  "file": "/home/zzy/c++/毕业设计/app-/server/main.cpp",
-  "output": "CMakeFiles/AppInfoFetcher.dir/main.cpp.o"
+  "command": "/usr/bin/g++  -I/home/zzy/c++/毕业设计/app-/server/./include -g -o CMakeFiles/Server.dir/src/TrafficCapture_.cpp.o -c \"/home/zzy/c++/毕业设计/app-/server/src/TrafficCapture .cpp\"",
+  "file": "/home/zzy/c++/毕业设计/app-/server/src/TrafficCapture .cpp",
+  "output": "CMakeFiles/Server.dir/src/TrafficCapture_.cpp.o"
+},
+{
+  "directory": "/home/zzy/c++/毕业设计/app-/server/build",
+  "command": "/usr/bin/g++  -I/home/zzy/c++/毕业设计/app-/server/./include -g -o CMakeFiles/Server.dir/src/main.cpp.o -c /home/zzy/c++/毕业设计/app-/server/src/main.cpp",
+  "file": "/home/zzy/c++/毕业设计/app-/server/src/main.cpp",
+  "output": "CMakeFiles/Server.dir/src/main.cpp.o"
 }
 ]

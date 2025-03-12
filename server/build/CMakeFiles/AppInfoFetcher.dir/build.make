@@ -108,6 +108,8 @@ AppInfoFetcher_EXTERNAL_OBJECTS =
 AppInfoFetcher: CMakeFiles/AppInfoFetcher.dir/AppInfoFetcher.cpp.o
 AppInfoFetcher: CMakeFiles/AppInfoFetcher.dir/main.cpp.o
 AppInfoFetcher: CMakeFiles/AppInfoFetcher.dir/build.make
+AppInfoFetcher: /usr/lib/x86_64-linux-gnu/libspdlog.so.1.12.0
+AppInfoFetcher: /usr/lib/x86_64-linux-gnu/libfmt.so.9.1.0
 AppInfoFetcher: CMakeFiles/AppInfoFetcher.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/zzy/c++/毕业设计/app-/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable AppInfoFetcher"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AppInfoFetcher.dir/link.txt --verbose=$(VERBOSE)

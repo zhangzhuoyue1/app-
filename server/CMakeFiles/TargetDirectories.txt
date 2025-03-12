@@ -1,0 +1,3 @@
+/home/zzy/c++/毕业设计/app-/server/CMakeFiles/AppInfoFetcher.dir
+/home/zzy/c++/毕业设计/app-/server/CMakeFiles/edit_cache.dir
+/home/zzy/c++/毕业设计/app-/server/CMakeFiles/rebuild_cache.dir
