@@ -1,3 +1,7 @@
-/home/zzy/c++/毕业设计/app-/server/build/CMakeFiles/Server.dir
 /home/zzy/c++/毕业设计/app-/server/build/CMakeFiles/edit_cache.dir
 /home/zzy/c++/毕业设计/app-/server/build/CMakeFiles/rebuild_cache.dir
+/home/zzy/c++/毕业设计/app-/server/build/src/CMakeFiles/AppInfoFetcher.dir
+/home/zzy/c++/毕业设计/app-/server/build/src/CMakeFiles/TrafficCapture.dir
+/home/zzy/c++/毕业设计/app-/server/build/src/CMakeFiles/your_main.dir
+/home/zzy/c++/毕业设计/app-/server/build/src/CMakeFiles/edit_cache.dir
+/home/zzy/c++/毕业设计/app-/server/build/src/CMakeFiles/rebuild_cache.dir

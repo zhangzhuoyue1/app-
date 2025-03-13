@@ -14,13 +14,17 @@
 # EXTERNAL cache entries
 ########################
 
+//Dependencies for the target
+AppInfoFetcher_LIB_DEPENDS:STATIC=general;spdlog::spdlog;
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
-//No help, variable specified on the command line.
+//Choose the type of build, options are: None Debug Release RelWithDebInfo
+// MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
@@ -214,6 +218,12 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Path to a file.
+PCAP_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+PCAP_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpcap.so
+
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
 
@@ -237,6 +247,9 @@ Server_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 Server_SOURCE_DIR:STATIC=/home/zzy/c++/毕业设计/app-/server
+
+//Dependencies for the target
+TrafficCapture_LIB_DEPENDS:STATIC=general;spdlog::spdlog;general;/usr/lib/x86_64-linux-gnu/libpcap.so;general;/usr/include;
 
 //The directory containing a CMake configuration file for fmt.
 fmt_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/fmt
@@ -361,7 +374,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

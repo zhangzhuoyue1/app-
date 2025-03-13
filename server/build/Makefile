@@ -117,89 +117,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Server
+# Target rules for targets named AppInfoFetcher
 
 # Build rule for target.
-Server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Server
-.PHONY : Server
+AppInfoFetcher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AppInfoFetcher
+.PHONY : AppInfoFetcher
 
 # fast build rule for target.
-Server/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/build
-.PHONY : Server/fast
+AppInfoFetcher/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/AppInfoFetcher.dir/build.make src/CMakeFiles/AppInfoFetcher.dir/build
+.PHONY : AppInfoFetcher/fast
 
-src/AppInfoFetcher.o: src/AppInfoFetcher.cpp.o
-.PHONY : src/AppInfoFetcher.o
+#=============================================================================
+# Target rules for targets named TrafficCapture
 
-# target to build an object file
-src/AppInfoFetcher.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.o
-.PHONY : src/AppInfoFetcher.cpp.o
+# Build rule for target.
+TrafficCapture: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TrafficCapture
+.PHONY : TrafficCapture
 
-src/AppInfoFetcher.i: src/AppInfoFetcher.cpp.i
-.PHONY : src/AppInfoFetcher.i
+# fast build rule for target.
+TrafficCapture/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/TrafficCapture.dir/build.make src/CMakeFiles/TrafficCapture.dir/build
+.PHONY : TrafficCapture/fast
 
-# target to preprocess a source file
-src/AppInfoFetcher.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.i
-.PHONY : src/AppInfoFetcher.cpp.i
+#=============================================================================
+# Target rules for targets named your_main
 
-src/AppInfoFetcher.s: src/AppInfoFetcher.cpp.s
-.PHONY : src/AppInfoFetcher.s
+# Build rule for target.
+your_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 your_main
+.PHONY : your_main
 
-# target to generate assembly for a file
-src/AppInfoFetcher.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.s
-.PHONY : src/AppInfoFetcher.cpp.s
-
-src/TrafficCapture_.o: src/TrafficCapture_.cpp.o
-.PHONY : src/TrafficCapture_.o
-
-# target to build an object file
-src/TrafficCapture_.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/TrafficCapture_.cpp.o
-.PHONY : src/TrafficCapture_.cpp.o
-
-src/TrafficCapture_.i: src/TrafficCapture_.cpp.i
-.PHONY : src/TrafficCapture_.i
-
-# target to preprocess a source file
-src/TrafficCapture_.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/TrafficCapture_.cpp.i
-.PHONY : src/TrafficCapture_.cpp.i
-
-src/TrafficCapture_.s: src/TrafficCapture_.cpp.s
-.PHONY : src/TrafficCapture_.s
-
-# target to generate assembly for a file
-src/TrafficCapture_.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/TrafficCapture_.cpp.s
-.PHONY : src/TrafficCapture_.cpp.s
-
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
-
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+# fast build rule for target.
+your_main/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/your_main.dir/build.make src/CMakeFiles/your_main.dir/build
+.PHONY : your_main/fast
 
 # Help Target
 help:
@@ -209,16 +163,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Server"
-	@echo "... src/AppInfoFetcher.o"
-	@echo "... src/AppInfoFetcher.i"
-	@echo "... src/AppInfoFetcher.s"
-	@echo "... src/TrafficCapture_.o"
-	@echo "... src/TrafficCapture_.i"
-	@echo "... src/TrafficCapture_.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... AppInfoFetcher"
+	@echo "... TrafficCapture"
+	@echo "... your_main"
 .PHONY : help
 
 

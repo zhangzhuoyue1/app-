@@ -1,8 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.o"
-  "CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.o.d"
-  "CMakeFiles/Server.dir/src/TrafficCapture_.cpp.o"
-  "CMakeFiles/Server.dir/src/TrafficCapture_.cpp.o.d"
   "CMakeFiles/Server.dir/src/main.cpp.o"
   "CMakeFiles/Server.dir/src/main.cpp.o.d"
   "Server"

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libAppInfoFetcher.a CMakeFiles/AppInfoFetcher.dir/AppInfoFetcher/AppInfoFetcher.cpp.o
+/usr/bin/ranlib libAppInfoFetcher.a

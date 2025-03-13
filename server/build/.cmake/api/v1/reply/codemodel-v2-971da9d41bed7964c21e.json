@@ -1,0 +1,94 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"jsonFile" : "directory-src-Debug-b6cf2213fc5053b67c22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "Server",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "AppInfoFetcher::@145eef247bfb46b6828c",
+					"jsonFile" : "target-AppInfoFetcher-Debug-0338b1b3ab2f44d49101.json",
+					"name" : "AppInfoFetcher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "TrafficCapture::@145eef247bfb46b6828c",
+					"jsonFile" : "target-TrafficCapture-Debug-1c9c24a4dc48c53a47bc.json",
+					"name" : "TrafficCapture",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "your_main::@145eef247bfb46b6828c",
+					"jsonFile" : "target-your_main-Debug-6e7bb903407158f856b6.json",
+					"name" : "your_main",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zzy/c++/\u6bd5\u4e1a\u8bbe\u8ba1/app-/server/build",
+		"source" : "/home/zzy/c++/\u6bd5\u4e1a\u8bbe\u8ba1/app-/server"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

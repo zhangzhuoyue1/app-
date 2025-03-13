@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/zzy/c++/毕业设计/app-/server/./include
+CXX_INCLUDES = 
 
 CXX_FLAGS = -g
 

@@ -1,20 +1,20 @@
 [
 {
-  "directory": "/home/zzy/c++/毕业设计/app-/server/build",
-  "command": "/usr/bin/g++  -I/home/zzy/c++/毕业设计/app-/server/./include -g -o CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.o -c /home/zzy/c++/毕业设计/app-/server/src/AppInfoFetcher.cpp",
-  "file": "/home/zzy/c++/毕业设计/app-/server/src/AppInfoFetcher.cpp",
-  "output": "CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.o"
+  "directory": "/home/zzy/c++/毕业设计/app-/server/build/src",
+  "command": "/usr/bin/g++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB  -g -std=gnu++17 -o CMakeFiles/AppInfoFetcher.dir/AppInfoFetcher/AppInfoFetcher.cpp.o -c /home/zzy/c++/毕业设计/app-/server/src/AppInfoFetcher/AppInfoFetcher.cpp",
+  "file": "/home/zzy/c++/毕业设计/app-/server/src/AppInfoFetcher/AppInfoFetcher.cpp",
+  "output": "src/CMakeFiles/AppInfoFetcher.dir/AppInfoFetcher/AppInfoFetcher.cpp.o"
 },
 {
-  "directory": "/home/zzy/c++/毕业设计/app-/server/build",
-  "command": "/usr/bin/g++  -I/home/zzy/c++/毕业设计/app-/server/./include -g -o CMakeFiles/Server.dir/src/TrafficCapture_.cpp.o -c \"/home/zzy/c++/毕业设计/app-/server/src/TrafficCapture .cpp\"",
-  "file": "/home/zzy/c++/毕业设计/app-/server/src/TrafficCapture .cpp",
-  "output": "CMakeFiles/Server.dir/src/TrafficCapture_.cpp.o"
+  "directory": "/home/zzy/c++/毕业设计/app-/server/build/src",
+  "command": "/usr/bin/g++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB  -g -std=gnu++17 -o CMakeFiles/TrafficCapture.dir/TrafficCapture/TrafficCapture.cpp.o -c /home/zzy/c++/毕业设计/app-/server/src/TrafficCapture/TrafficCapture.cpp",
+  "file": "/home/zzy/c++/毕业设计/app-/server/src/TrafficCapture/TrafficCapture.cpp",
+  "output": "src/CMakeFiles/TrafficCapture.dir/TrafficCapture/TrafficCapture.cpp.o"
 },
 {
-  "directory": "/home/zzy/c++/毕业设计/app-/server/build",
-  "command": "/usr/bin/g++  -I/home/zzy/c++/毕业设计/app-/server/./include -g -o CMakeFiles/Server.dir/src/main.cpp.o -c /home/zzy/c++/毕业设计/app-/server/src/main.cpp",
+  "directory": "/home/zzy/c++/毕业设计/app-/server/build/src",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/your_main.dir/main.cpp.o -c /home/zzy/c++/毕业设计/app-/server/src/main.cpp",
   "file": "/home/zzy/c++/毕业设计/app-/server/src/main.cpp",
-  "output": "CMakeFiles/Server.dir/src/main.cpp.o"
+  "output": "src/CMakeFiles/your_main.dir/main.cpp.o"
 }
 ]

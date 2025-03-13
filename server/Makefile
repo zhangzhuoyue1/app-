@@ -126,56 +126,34 @@ AppInfoFetcher: cmake_check_build_system
 
 # fast build rule for target.
 AppInfoFetcher/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppInfoFetcher.dir/build.make CMakeFiles/AppInfoFetcher.dir/build
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/AppInfoFetcher.dir/build.make src/CMakeFiles/AppInfoFetcher.dir/build
 .PHONY : AppInfoFetcher/fast
 
-AppInfoFetcher.o: AppInfoFetcher.cpp.o
-.PHONY : AppInfoFetcher.o
+#=============================================================================
+# Target rules for targets named TrafficCapture
 
-# target to build an object file
-AppInfoFetcher.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppInfoFetcher.dir/build.make CMakeFiles/AppInfoFetcher.dir/AppInfoFetcher.cpp.o
-.PHONY : AppInfoFetcher.cpp.o
+# Build rule for target.
+TrafficCapture: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TrafficCapture
+.PHONY : TrafficCapture
 
-AppInfoFetcher.i: AppInfoFetcher.cpp.i
-.PHONY : AppInfoFetcher.i
+# fast build rule for target.
+TrafficCapture/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/TrafficCapture.dir/build.make src/CMakeFiles/TrafficCapture.dir/build
+.PHONY : TrafficCapture/fast
 
-# target to preprocess a source file
-AppInfoFetcher.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppInfoFetcher.dir/build.make CMakeFiles/AppInfoFetcher.dir/AppInfoFetcher.cpp.i
-.PHONY : AppInfoFetcher.cpp.i
+#=============================================================================
+# Target rules for targets named your_main
 
-AppInfoFetcher.s: AppInfoFetcher.cpp.s
-.PHONY : AppInfoFetcher.s
+# Build rule for target.
+your_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 your_main
+.PHONY : your_main
 
-# target to generate assembly for a file
-AppInfoFetcher.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppInfoFetcher.dir/build.make CMakeFiles/AppInfoFetcher.dir/AppInfoFetcher.cpp.s
-.PHONY : AppInfoFetcher.cpp.s
-
-main.o: main.cpp.o
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppInfoFetcher.dir/build.make CMakeFiles/AppInfoFetcher.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppInfoFetcher.dir/build.make CMakeFiles/AppInfoFetcher.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppInfoFetcher.dir/build.make CMakeFiles/AppInfoFetcher.dir/main.cpp.s
-.PHONY : main.cpp.s
+# fast build rule for target.
+your_main/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/your_main.dir/build.make src/CMakeFiles/your_main.dir/build
+.PHONY : your_main/fast
 
 # Help Target
 help:
@@ -186,12 +164,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... AppInfoFetcher"
-	@echo "... AppInfoFetcher.o"
-	@echo "... AppInfoFetcher.i"
-	@echo "... AppInfoFetcher.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... TrafficCapture"
+	@echo "... your_main"
 .PHONY : help
 
 

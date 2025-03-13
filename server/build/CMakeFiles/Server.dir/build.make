@@ -69,38 +69,10 @@ include CMakeFiles/Server.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Server.dir/flags.make
 
-CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.o: CMakeFiles/Server.dir/flags.make
-CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.o: /home/zzy/c++/毕业设计/app-/server/src/AppInfoFetcher.cpp
-CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.o: CMakeFiles/Server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zzy/c++/毕业设计/app-/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.o -MF CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.o.d -o CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.o -c /home/zzy/c++/毕业设计/app-/server/src/AppInfoFetcher.cpp
-
-CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zzy/c++/毕业设计/app-/server/src/AppInfoFetcher.cpp > CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.i
-
-CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zzy/c++/毕业设计/app-/server/src/AppInfoFetcher.cpp -o CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.s
-
-CMakeFiles/Server.dir/src/TrafficCapture_.cpp.o: CMakeFiles/Server.dir/flags.make
-CMakeFiles/Server.dir/src/TrafficCapture_.cpp.o: /home/zzy/c++/毕业设计/app-/server/src/TrafficCapture\ .cpp
-CMakeFiles/Server.dir/src/TrafficCapture_.cpp.o: CMakeFiles/Server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zzy/c++/毕业设计/app-/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Server.dir/src/TrafficCapture_.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Server.dir/src/TrafficCapture_.cpp.o -MF CMakeFiles/Server.dir/src/TrafficCapture_.cpp.o.d -o CMakeFiles/Server.dir/src/TrafficCapture_.cpp.o -c "/home/zzy/c++/毕业设计/app-/server/src/TrafficCapture .cpp"
-
-CMakeFiles/Server.dir/src/TrafficCapture_.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/TrafficCapture_.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/zzy/c++/毕业设计/app-/server/src/TrafficCapture .cpp" > CMakeFiles/Server.dir/src/TrafficCapture_.cpp.i
-
-CMakeFiles/Server.dir/src/TrafficCapture_.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/TrafficCapture_.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/zzy/c++/毕业设计/app-/server/src/TrafficCapture .cpp" -o CMakeFiles/Server.dir/src/TrafficCapture_.cpp.s
-
 CMakeFiles/Server.dir/src/main.cpp.o: CMakeFiles/Server.dir/flags.make
 CMakeFiles/Server.dir/src/main.cpp.o: /home/zzy/c++/毕业设计/app-/server/src/main.cpp
 CMakeFiles/Server.dir/src/main.cpp.o: CMakeFiles/Server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zzy/c++/毕业设计/app-/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Server.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zzy/c++/毕业设计/app-/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Server.dir/src/main.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Server.dir/src/main.cpp.o -MF CMakeFiles/Server.dir/src/main.cpp.o.d -o CMakeFiles/Server.dir/src/main.cpp.o -c /home/zzy/c++/毕业设计/app-/server/src/main.cpp
 
 CMakeFiles/Server.dir/src/main.cpp.i: cmake_force
@@ -113,19 +85,15 @@ CMakeFiles/Server.dir/src/main.cpp.s: cmake_force
 
 # Object files for target Server
 Server_OBJECTS = \
-"CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.o" \
-"CMakeFiles/Server.dir/src/TrafficCapture_.cpp.o" \
 "CMakeFiles/Server.dir/src/main.cpp.o"
 
 # External object files for target Server
 Server_EXTERNAL_OBJECTS =
 
-Server: CMakeFiles/Server.dir/src/AppInfoFetcher.cpp.o
-Server: CMakeFiles/Server.dir/src/TrafficCapture_.cpp.o
 Server: CMakeFiles/Server.dir/src/main.cpp.o
 Server: CMakeFiles/Server.dir/build.make
 Server: CMakeFiles/Server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/zzy/c++/毕业设计/app-/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/zzy/c++/毕业设计/app-/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
