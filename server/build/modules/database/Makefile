@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/c++/毕业设计/app-/server/build/CMakeFiles /home/zzy/c++/毕业设计/app-/server/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/zzy/c++/毕业设计/app-/server/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/c++/毕业设计/app-/server/build/CMakeFiles /home/zzy/c++/毕业设计/app-/server/build/modules/database//CMakeFiles/progress.marks
+	cd /home/zzy/c++/毕业设计/app-/server/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/database/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/c++/毕业设计/app-/server/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/zzy/c++/毕业设计/app-/server/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/database/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,31 +148,18 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/zzy/c++/毕业设计/app-/server/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/database/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/zzy/c++/毕业设计/app-/server/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/database/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/zzy/c++/毕业设计/app-/server/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named message_parser
-
-# Build rule for target.
-message_parser: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 message_parser
-.PHONY : message_parser
-
-# fast build rule for target.
-message_parser/fast:
-	$(MAKE) $(MAKESILENT) -f modules/message_parser/CMakeFiles/message_parser.dir/build.make modules/message_parser/CMakeFiles/message_parser.dir/build
-.PHONY : message_parser/fast
 
 # Help Target
 help:
@@ -186,7 +173,6 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... message_parser"
 .PHONY : help
 
 
@@ -198,6 +184,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/zzy/c++/毕业设计/app-/server/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

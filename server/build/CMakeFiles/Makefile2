@@ -63,114 +63,93 @@ CMAKE_BINARY_DIR = /home/zzy/c++/毕业设计/app-/server/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: src/all
+all: modules/message_parser/all
+all: modules/database/all
+all: apps/server/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: src/preinstall
+preinstall: modules/message_parser/preinstall
+preinstall: modules/database/preinstall
+preinstall: apps/server/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: src/clean
+clean: modules/message_parser/clean
+clean: modules/database/clean
+clean: apps/server/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory src
+# Directory level rules for directory apps/server
 
 # Recursive "all" directory target.
-src/all: src/CMakeFiles/AppInfoFetcher.dir/all
-src/all: src/CMakeFiles/TrafficCapture.dir/all
-src/all: src/CMakeFiles/your_main.dir/all
-.PHONY : src/all
+apps/server/all:
+.PHONY : apps/server/all
 
 # Recursive "preinstall" directory target.
-src/preinstall:
-.PHONY : src/preinstall
+apps/server/preinstall:
+.PHONY : apps/server/preinstall
 
 # Recursive "clean" directory target.
-src/clean: src/CMakeFiles/AppInfoFetcher.dir/clean
-src/clean: src/CMakeFiles/TrafficCapture.dir/clean
-src/clean: src/CMakeFiles/your_main.dir/clean
-.PHONY : src/clean
+apps/server/clean:
+.PHONY : apps/server/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/AppInfoFetcher.dir
+# Directory level rules for directory modules/database
 
-# All Build rule for target.
-src/CMakeFiles/AppInfoFetcher.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/AppInfoFetcher.dir/build.make src/CMakeFiles/AppInfoFetcher.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/AppInfoFetcher.dir/build.make src/CMakeFiles/AppInfoFetcher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/zzy/c++/毕业设计/app-/server/build/CMakeFiles --progress-num=1,2 "Built target AppInfoFetcher"
-.PHONY : src/CMakeFiles/AppInfoFetcher.dir/all
+# Recursive "all" directory target.
+modules/database/all:
+.PHONY : modules/database/all
 
-# Build rule for subdir invocation for target.
-src/CMakeFiles/AppInfoFetcher.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/c++/毕业设计/app-/server/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/AppInfoFetcher.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/c++/毕业设计/app-/server/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/AppInfoFetcher.dir/rule
+# Recursive "preinstall" directory target.
+modules/database/preinstall:
+.PHONY : modules/database/preinstall
 
-# Convenience name for target.
-AppInfoFetcher: src/CMakeFiles/AppInfoFetcher.dir/rule
-.PHONY : AppInfoFetcher
-
-# clean rule for target.
-src/CMakeFiles/AppInfoFetcher.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/AppInfoFetcher.dir/build.make src/CMakeFiles/AppInfoFetcher.dir/clean
-.PHONY : src/CMakeFiles/AppInfoFetcher.dir/clean
+# Recursive "clean" directory target.
+modules/database/clean:
+.PHONY : modules/database/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/TrafficCapture.dir
+# Directory level rules for directory modules/message_parser
 
-# All Build rule for target.
-src/CMakeFiles/TrafficCapture.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/TrafficCapture.dir/build.make src/CMakeFiles/TrafficCapture.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/TrafficCapture.dir/build.make src/CMakeFiles/TrafficCapture.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/zzy/c++/毕业设计/app-/server/build/CMakeFiles --progress-num=3,4 "Built target TrafficCapture"
-.PHONY : src/CMakeFiles/TrafficCapture.dir/all
+# Recursive "all" directory target.
+modules/message_parser/all: modules/message_parser/CMakeFiles/message_parser.dir/all
+.PHONY : modules/message_parser/all
 
-# Build rule for subdir invocation for target.
-src/CMakeFiles/TrafficCapture.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/c++/毕业设计/app-/server/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/TrafficCapture.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/c++/毕业设计/app-/server/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/TrafficCapture.dir/rule
+# Recursive "preinstall" directory target.
+modules/message_parser/preinstall:
+.PHONY : modules/message_parser/preinstall
 
-# Convenience name for target.
-TrafficCapture: src/CMakeFiles/TrafficCapture.dir/rule
-.PHONY : TrafficCapture
-
-# clean rule for target.
-src/CMakeFiles/TrafficCapture.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/TrafficCapture.dir/build.make src/CMakeFiles/TrafficCapture.dir/clean
-.PHONY : src/CMakeFiles/TrafficCapture.dir/clean
+# Recursive "clean" directory target.
+modules/message_parser/clean: modules/message_parser/CMakeFiles/message_parser.dir/clean
+.PHONY : modules/message_parser/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/your_main.dir
+# Target rules for target modules/message_parser/CMakeFiles/message_parser.dir
 
 # All Build rule for target.
-src/CMakeFiles/your_main.dir/all: src/CMakeFiles/AppInfoFetcher.dir/all
-src/CMakeFiles/your_main.dir/all: src/CMakeFiles/TrafficCapture.dir/all
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/your_main.dir/build.make src/CMakeFiles/your_main.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/your_main.dir/build.make src/CMakeFiles/your_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/zzy/c++/毕业设计/app-/server/build/CMakeFiles --progress-num=5,6 "Built target your_main"
-.PHONY : src/CMakeFiles/your_main.dir/all
+modules/message_parser/CMakeFiles/message_parser.dir/all:
+	$(MAKE) $(MAKESILENT) -f modules/message_parser/CMakeFiles/message_parser.dir/build.make modules/message_parser/CMakeFiles/message_parser.dir/depend
+	$(MAKE) $(MAKESILENT) -f modules/message_parser/CMakeFiles/message_parser.dir/build.make modules/message_parser/CMakeFiles/message_parser.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/zzy/c++/毕业设计/app-/server/build/CMakeFiles --progress-num=1,2,3 "Built target message_parser"
+.PHONY : modules/message_parser/CMakeFiles/message_parser.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/your_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/c++/毕业设计/app-/server/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/your_main.dir/all
+modules/message_parser/CMakeFiles/message_parser.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/c++/毕业设计/app-/server/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/message_parser/CMakeFiles/message_parser.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/c++/毕业设计/app-/server/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/your_main.dir/rule
+.PHONY : modules/message_parser/CMakeFiles/message_parser.dir/rule
 
 # Convenience name for target.
-your_main: src/CMakeFiles/your_main.dir/rule
-.PHONY : your_main
+message_parser: modules/message_parser/CMakeFiles/message_parser.dir/rule
+.PHONY : message_parser
 
 # clean rule for target.
-src/CMakeFiles/your_main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/your_main.dir/build.make src/CMakeFiles/your_main.dir/clean
-.PHONY : src/CMakeFiles/your_main.dir/clean
+modules/message_parser/CMakeFiles/message_parser.dir/clean:
+	$(MAKE) $(MAKESILENT) -f modules/message_parser/CMakeFiles/message_parser.dir/build.make modules/message_parser/CMakeFiles/message_parser.dir/clean
+.PHONY : modules/message_parser/CMakeFiles/message_parser.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

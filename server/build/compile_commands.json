@@ -1,20 +1,14 @@
 [
 {
-  "directory": "/home/zzy/c++/毕业设计/app-/server/build/src",
-  "command": "/usr/bin/g++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB  -g -std=gnu++17 -o CMakeFiles/AppInfoFetcher.dir/AppInfoFetcher/AppInfoFetcher.cpp.o -c /home/zzy/c++/毕业设计/app-/server/src/AppInfoFetcher/AppInfoFetcher.cpp",
-  "file": "/home/zzy/c++/毕业设计/app-/server/src/AppInfoFetcher/AppInfoFetcher.cpp",
-  "output": "src/CMakeFiles/AppInfoFetcher.dir/AppInfoFetcher/AppInfoFetcher.cpp.o"
+  "directory": "/home/zzy/c++/毕业设计/app-/server/build/modules/message_parser",
+  "command": "/usr/bin/g++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/home/zzy/c++/毕业设计/app-/server/modules/message_parser/include -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/libnl3 -g -std=gnu++17 -g -O0 -o CMakeFiles/message_parser.dir/src/AppInfoFetcher.cpp.o -c /home/zzy/c++/毕业设计/app-/server/modules/message_parser/src/AppInfoFetcher.cpp",
+  "file": "/home/zzy/c++/毕业设计/app-/server/modules/message_parser/src/AppInfoFetcher.cpp",
+  "output": "modules/message_parser/CMakeFiles/message_parser.dir/src/AppInfoFetcher.cpp.o"
 },
 {
-  "directory": "/home/zzy/c++/毕业设计/app-/server/build/src",
-  "command": "/usr/bin/g++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB  -g -std=gnu++17 -o CMakeFiles/TrafficCapture.dir/TrafficCapture/TrafficCapture.cpp.o -c /home/zzy/c++/毕业设计/app-/server/src/TrafficCapture/TrafficCapture.cpp",
-  "file": "/home/zzy/c++/毕业设计/app-/server/src/TrafficCapture/TrafficCapture.cpp",
-  "output": "src/CMakeFiles/TrafficCapture.dir/TrafficCapture/TrafficCapture.cpp.o"
-},
-{
-  "directory": "/home/zzy/c++/毕业设计/app-/server/build/src",
-  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/your_main.dir/main.cpp.o -c /home/zzy/c++/毕业设计/app-/server/src/main.cpp",
-  "file": "/home/zzy/c++/毕业设计/app-/server/src/main.cpp",
-  "output": "src/CMakeFiles/your_main.dir/main.cpp.o"
+  "directory": "/home/zzy/c++/毕业设计/app-/server/build/modules/message_parser",
+  "command": "/usr/bin/g++ -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/home/zzy/c++/毕业设计/app-/server/modules/message_parser/include -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/libnl3 -g -std=gnu++17 -g -O0 -o CMakeFiles/message_parser.dir/src/TrafficCapture.cpp.o -c /home/zzy/c++/毕业设计/app-/server/modules/message_parser/src/TrafficCapture.cpp",
+  "file": "/home/zzy/c++/毕业设计/app-/server/modules/message_parser/src/TrafficCapture.cpp",
+  "output": "modules/message_parser/CMakeFiles/message_parser.dir/src/TrafficCapture.cpp.o"
 }
 ]

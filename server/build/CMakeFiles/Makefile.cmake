@@ -8,10 +8,12 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/zzy/c++/毕业设计/app-/server/CMakeLists.txt"
+  "/home/zzy/c++/毕业设计/app-/server/apps/server/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
-  "/home/zzy/c++/毕业设计/app-/server/src/CMakeLists.txt"
+  "/home/zzy/c++/毕业设计/app-/server/modules/database/CMakeLists.txt"
+  "/home/zzy/c++/毕业设计/app-/server/modules/message_parser/CMakeLists.txt"
   "/usr/lib/x86_64-linux-gnu/cmake/fmt/fmt-config-version.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/fmt/fmt-config.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/fmt/fmt-targets-none.cmake"
@@ -38,6 +40,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.28/Modules/Compiler/GNU.cmake"
   "/usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/share/cmake-3.28/Modules/FindPackageMessage.cmake"
+  "/usr/share/cmake-3.28/Modules/FindPkgConfig.cmake"
   "/usr/share/cmake-3.28/Modules/FindThreads.cmake"
   "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake"
   "/usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake"
@@ -57,12 +60,12 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "modules/message_parser/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "modules/database/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "apps/server/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "src/CMakeFiles/AppInfoFetcher.dir/DependInfo.cmake"
-  "src/CMakeFiles/TrafficCapture.dir/DependInfo.cmake"
-  "src/CMakeFiles/your_main.dir/DependInfo.cmake"
+  "modules/message_parser/CMakeFiles/message_parser.dir/DependInfo.cmake"
   )
