@@ -24,7 +24,7 @@
 				{
 					"build" : "modules/message_parser",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-modules.message_parser-Debug-d17454b9051e619a163c.json",
+					"jsonFile" : "directory-modules.message_parser-Debug-d0a75f99b74715242a98.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.10"
@@ -34,19 +34,24 @@
 					"source" : "modules/message_parser",
 					"targetIndexes" : 
 					[
-						0
+						1
 					]
 				},
 				{
 					"build" : "modules/database",
-					"jsonFile" : "directory-modules.database-Debug-dcda34cdc3a4ad9e2bd4.json",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-modules.database-Debug-638beaa67342fe22bfe2.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.10"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
-					"source" : "modules/database"
+					"source" : "modules/database",
+					"targetIndexes" : 
+					[
+						0
+					]
 				},
 				{
 					"build" : "apps/server",
@@ -74,16 +79,24 @@
 					"name" : "MyServerProject",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
 			"targets" : 
 			[
 				{
+					"directoryIndex" : 2,
+					"id" : "database::@464c0413318e7df7717f",
+					"jsonFile" : "target-database-Debug-9e3eeddfde5052114cf0.json",
+					"name" : "database",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 1,
 					"id" : "message_parser::@6929ec9f23ccfe5e513f",
-					"jsonFile" : "target-message_parser-Debug-b86960600bf6b49e7e71.json",
+					"jsonFile" : "target-message_parser-Debug-717ca7371c4fb3af31ea.json",
 					"name" : "message_parser",
 					"projectIndex" : 0
 				}

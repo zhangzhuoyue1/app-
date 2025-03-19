@@ -9,10 +9,11 @@ target_include_directories(message_parser PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
-# 依赖第三方库
+# ----------------------------------依赖第三方库----------------------------------#
+# sqdlog 日志库
 find_package(spdlog REQUIRED)
 target_link_libraries(message_parser PUBLIC spdlog::spdlog)
-
+# libpcap 网络数据包捕获库
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(PCAP REQUIRED libpcap)
 target_include_directories(message_parser PUBLIC
@@ -22,6 +23,8 @@ target_include_directories(message_parser PUBLIC
 target_link_libraries(message_parser PRIVATE
     ${PCAP_LIBRARIES}
 )
+
+
 
 # 安装配置
 install(TARGETS message_parser

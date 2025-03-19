@@ -68,4 +68,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "modules/message_parser/CMakeFiles/message_parser.dir/DependInfo.cmake"
+  "modules/database/CMakeFiles/database.dir/DependInfo.cmake"
   )

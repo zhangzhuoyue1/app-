@@ -244,6 +244,9 @@ PKG_CONFIG_ARGN:STRING=
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
+//Dependencies for the target
+database_LIB_DEPENDS:STATIC=general;spdlog::spdlog;general;mysqlclient;
+
 //The directory containing a CMake configuration file for fmt.
 fmt_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/fmt
 
@@ -251,7 +254,13 @@ fmt_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/fmt
 message_parser_LIB_DEPENDS:STATIC=general;spdlog::spdlog;general;pcap;
 
 //Path to a library.
+pkgcfg_lib_MYSQL_mysqlclient:FILEPATH=/usr/lib/x86_64-linux-gnu/libmysqlclient.so
+
+//Path to a library.
 pkgcfg_lib_PCAP_pcap:FILEPATH=/usr/lib/x86_64-linux-gnu/libpcap.so
+
+//Path to a library.
+pkgcfg_lib_REDIS_hiredis:FILEPATH=/usr/lib/x86_64-linux-gnu/libhiredis.so
 
 //The directory containing a CMake configuration file for spdlog.
 spdlog_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/spdlog
@@ -412,6 +421,53 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v1.8.1()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+MYSQL_CFLAGS:INTERNAL=-I/usr/include/mysql;-I/usr/include
+MYSQL_CFLAGS_I:INTERNAL=
+MYSQL_CFLAGS_OTHER:INTERNAL=
+MYSQL_FOUND:INTERNAL=1
+MYSQL_INCLUDEDIR:INTERNAL=/usr/include/mysql
+MYSQL_INCLUDE_DIRS:INTERNAL=/usr/include/mysql;/usr/include
+MYSQL_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lmysqlclient
+MYSQL_LDFLAGS_OTHER:INTERNAL=
+MYSQL_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+MYSQL_LIBRARIES:INTERNAL=mysqlclient
+MYSQL_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+MYSQL_LIBS:INTERNAL=
+MYSQL_LIBS_L:INTERNAL=
+MYSQL_LIBS_OTHER:INTERNAL=
+MYSQL_LIBS_PATHS:INTERNAL=
+MYSQL_MODULE_NAME:INTERNAL=mysqlclient
+MYSQL_PREFIX:INTERNAL=/usr
+MYSQL_STATIC_CFLAGS:INTERNAL=-I/usr/include/mysql;-I/usr/include
+MYSQL_STATIC_CFLAGS_I:INTERNAL=
+MYSQL_STATIC_CFLAGS_OTHER:INTERNAL=
+MYSQL_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/mysql;/usr/include
+MYSQL_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lmysqlclient;-lz;-lzstd;-lresolv;-lm;-L/usr/lib/x86_64-linux-gnu;-lssl;-L/usr/lib/x86_64-linux-gnu;-ldl;-pthread;-lcrypto;-ldl;-pthread
+MYSQL_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread;-pthread
+MYSQL_STATIC_LIBDIR:INTERNAL=
+MYSQL_STATIC_LIBRARIES:INTERNAL=mysqlclient;z;zstd;resolv;m;ssl;dl;crypto;dl
+MYSQL_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu
+MYSQL_STATIC_LIBS:INTERNAL=
+MYSQL_STATIC_LIBS_L:INTERNAL=
+MYSQL_STATIC_LIBS_OTHER:INTERNAL=
+MYSQL_STATIC_LIBS_PATHS:INTERNAL=
+MYSQL_VERSION:INTERNAL=21.2.41
+MYSQL_mymysqlclientsql_INCLUDEDIR:INTERNAL=
+MYSQL_mymysqlclientsql_LIBDIR:INTERNAL=
+MYSQL_mymysqlclientsql_PREFIX:INTERNAL=
+MYSQL_mymysqlclientsql_VERSION:INTERNAL=
+MYSQL_mysql_INCLUDEDIR:INTERNAL=
+MYSQL_mysql_LIBDIR:INTERNAL=
+MYSQL_mysql_PREFIX:INTERNAL=
+MYSQL_mysql_VERSION:INTERNAL=
+MYSQL_mysqlclient_INCLUDEDIR:INTERNAL=
+MYSQL_mysqlclient_LIBDIR:INTERNAL=
+MYSQL_mysqlclient_PREFIX:INTERNAL=
+MYSQL_mysqlclient_VERSION:INTERNAL=
+MYSQL_redis_INCLUDEDIR:INTERNAL=
+MYSQL_redis_LIBDIR:INTERNAL=
+MYSQL_redis_PREFIX:INTERNAL=
+MYSQL_redis_VERSION:INTERNAL=
 PCAP_CFLAGS:INTERNAL=-I/usr/include;-I/usr/include/dbus-1.0;-I/usr/lib/x86_64-linux-gnu/dbus-1.0/include;-I/usr/include/libnl3
 PCAP_CFLAGS_I:INTERNAL=
 PCAP_CFLAGS_OTHER:INTERNAL=
@@ -447,15 +503,66 @@ PCAP_libpcap_INCLUDEDIR:INTERNAL=
 PCAP_libpcap_LIBDIR:INTERNAL=
 PCAP_libpcap_PREFIX:INTERNAL=
 PCAP_libpcap_VERSION:INTERNAL=
+PCAP_mysql_INCLUDEDIR:INTERNAL=
+PCAP_mysql_LIBDIR:INTERNAL=
+PCAP_mysql_PREFIX:INTERNAL=
+PCAP_mysql_VERSION:INTERNAL=
 //ADVANCED property for variable: PKG_CONFIG_ARGN
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+REDIS_CFLAGS:INTERNAL=-I/usr/include/hiredis;-I/usr/include;-D_FILE_OFFSET_BITS=64
+REDIS_CFLAGS_I:INTERNAL=
+REDIS_CFLAGS_OTHER:INTERNAL=-D_FILE_OFFSET_BITS=64
+REDIS_FOUND:INTERNAL=1
+REDIS_INCLUDEDIR:INTERNAL=/usr/include
+REDIS_INCLUDE_DIRS:INTERNAL=/usr/include/hiredis;/usr/include
+REDIS_LDFLAGS:INTERNAL=-L/usr/lib;-lhiredis
+REDIS_LDFLAGS_OTHER:INTERNAL=
+REDIS_LIBDIR:INTERNAL=/usr/lib
+REDIS_LIBRARIES:INTERNAL=hiredis
+REDIS_LIBRARY_DIRS:INTERNAL=/usr/lib
+REDIS_LIBS:INTERNAL=
+REDIS_LIBS_L:INTERNAL=
+REDIS_LIBS_OTHER:INTERNAL=
+REDIS_LIBS_PATHS:INTERNAL=
+REDIS_MODULE_NAME:INTERNAL=hiredis
+REDIS_PREFIX:INTERNAL=/usr
+REDIS_STATIC_CFLAGS:INTERNAL=-I/usr/include/hiredis;-I/usr/include;-D_FILE_OFFSET_BITS=64
+REDIS_STATIC_CFLAGS_I:INTERNAL=
+REDIS_STATIC_CFLAGS_OTHER:INTERNAL=-D_FILE_OFFSET_BITS=64
+REDIS_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/hiredis;/usr/include
+REDIS_STATIC_LDFLAGS:INTERNAL=-L/usr/lib;-lhiredis
+REDIS_STATIC_LDFLAGS_OTHER:INTERNAL=
+REDIS_STATIC_LIBDIR:INTERNAL=
+REDIS_STATIC_LIBRARIES:INTERNAL=hiredis
+REDIS_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib
+REDIS_STATIC_LIBS:INTERNAL=
+REDIS_STATIC_LIBS_L:INTERNAL=
+REDIS_STATIC_LIBS_OTHER:INTERNAL=
+REDIS_STATIC_LIBS_PATHS:INTERNAL=
+REDIS_VERSION:INTERNAL=1.2.0
+REDIS_hiredis_INCLUDEDIR:INTERNAL=
+REDIS_hiredis_LIBDIR:INTERNAL=
+REDIS_hiredis_PREFIX:INTERNAL=
+REDIS_hiredis_VERSION:INTERNAL=
+REDIS_redis_INCLUDEDIR:INTERNAL=
+REDIS_redis_LIBDIR:INTERNAL=
+REDIS_redis_PREFIX:INTERNAL=
+REDIS_redis_VERSION:INTERNAL=
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
+__pkg_config_arguments_MYSQL:INTERNAL=REQUIRED;mysqlclient
 __pkg_config_arguments_PCAP:INTERNAL=REQUIRED;libpcap
+__pkg_config_arguments_REDIS:INTERNAL=REQUIRED;hiredis
+__pkg_config_checked_MYSQL:INTERNAL=1
 __pkg_config_checked_PCAP:INTERNAL=1
+__pkg_config_checked_REDIS:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_MYSQL_mysqlclient
+pkgcfg_lib_MYSQL_mysqlclient-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PCAP_pcap
 pkgcfg_lib_PCAP_pcap-ADVANCED:INTERNAL=1
-prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
+//ADVANCED property for variable: pkgcfg_lib_REDIS_hiredis
+pkgcfg_lib_REDIS_hiredis-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=/usr/lib
 

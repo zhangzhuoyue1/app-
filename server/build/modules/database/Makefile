@@ -161,6 +161,44 @@ depend:
 	cd /home/zzy/c++/毕业设计/app-/server/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+modules/database/CMakeFiles/database.dir/rule:
+	cd /home/zzy/c++/毕业设计/app-/server/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/database/CMakeFiles/database.dir/rule
+.PHONY : modules/database/CMakeFiles/database.dir/rule
+
+# Convenience name for target.
+database: modules/database/CMakeFiles/database.dir/rule
+.PHONY : database
+
+# fast build rule for target.
+database/fast:
+	cd /home/zzy/c++/毕业设计/app-/server/build && $(MAKE) $(MAKESILENT) -f modules/database/CMakeFiles/database.dir/build.make modules/database/CMakeFiles/database.dir/build
+.PHONY : database/fast
+
+src/MySQLPool.o: src/MySQLPool.cpp.o
+.PHONY : src/MySQLPool.o
+
+# target to build an object file
+src/MySQLPool.cpp.o:
+	cd /home/zzy/c++/毕业设计/app-/server/build && $(MAKE) $(MAKESILENT) -f modules/database/CMakeFiles/database.dir/build.make modules/database/CMakeFiles/database.dir/src/MySQLPool.cpp.o
+.PHONY : src/MySQLPool.cpp.o
+
+src/MySQLPool.i: src/MySQLPool.cpp.i
+.PHONY : src/MySQLPool.i
+
+# target to preprocess a source file
+src/MySQLPool.cpp.i:
+	cd /home/zzy/c++/毕业设计/app-/server/build && $(MAKE) $(MAKESILENT) -f modules/database/CMakeFiles/database.dir/build.make modules/database/CMakeFiles/database.dir/src/MySQLPool.cpp.i
+.PHONY : src/MySQLPool.cpp.i
+
+src/MySQLPool.s: src/MySQLPool.cpp.s
+.PHONY : src/MySQLPool.s
+
+# target to generate assembly for a file
+src/MySQLPool.cpp.s:
+	cd /home/zzy/c++/毕业设计/app-/server/build && $(MAKE) $(MAKESILENT) -f modules/database/CMakeFiles/database.dir/build.make modules/database/CMakeFiles/database.dir/src/MySQLPool.cpp.s
+.PHONY : src/MySQLPool.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -173,6 +211,10 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... database"
+	@echo "... src/MySQLPool.o"
+	@echo "... src/MySQLPool.i"
+	@echo "... src/MySQLPool.s"
 .PHONY : help
 
 

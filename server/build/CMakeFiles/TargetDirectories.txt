@@ -11,6 +11,7 @@
 /home/zzy/c++/毕业设计/app-/server/build/modules/message_parser/CMakeFiles/install.dir
 /home/zzy/c++/毕业设计/app-/server/build/modules/message_parser/CMakeFiles/install/local.dir
 /home/zzy/c++/毕业设计/app-/server/build/modules/message_parser/CMakeFiles/install/strip.dir
+/home/zzy/c++/毕业设计/app-/server/build/modules/database/CMakeFiles/database.dir
 /home/zzy/c++/毕业设计/app-/server/build/modules/database/CMakeFiles/edit_cache.dir
 /home/zzy/c++/毕业设计/app-/server/build/modules/database/CMakeFiles/rebuild_cache.dir
 /home/zzy/c++/毕业设计/app-/server/build/modules/database/CMakeFiles/list_install_components.dir

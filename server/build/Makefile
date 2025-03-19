@@ -174,6 +174,19 @@ message_parser/fast:
 	$(MAKE) $(MAKESILENT) -f modules/message_parser/CMakeFiles/message_parser.dir/build.make modules/message_parser/CMakeFiles/message_parser.dir/build
 .PHONY : message_parser/fast
 
+#=============================================================================
+# Target rules for targets named database
+
+# Build rule for target.
+database: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 database
+.PHONY : database
+
+# fast build rule for target.
+database/fast:
+	$(MAKE) $(MAKESILENT) -f modules/database/CMakeFiles/database.dir/build.make modules/database/CMakeFiles/database.dir/build
+.PHONY : database/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,6 +199,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... database"
 	@echo "... message_parser"
 .PHONY : help
 
