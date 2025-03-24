@@ -40,7 +40,7 @@
 				{
 					"build" : "modules/database",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-modules.database-Debug-638beaa67342fe22bfe2.json",
+					"jsonFile" : "directory-modules.database-Debug-3808b0777d5ec891401b.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.10"
@@ -89,7 +89,7 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "database::@464c0413318e7df7717f",
-					"jsonFile" : "target-database-Debug-9e3eeddfde5052114cf0.json",
+					"jsonFile" : "target-database-Debug-ee087458ae36473665da.json",
 					"name" : "database",
 					"projectIndex" : 0
 				},
