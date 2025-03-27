@@ -44,9 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("/home/zzy/c++/毕业设计/app-/server/build/_deps/googletest-build/cmake_install.cmake")
   include("/home/zzy/c++/毕业设计/app-/server/build/modules/message_parser/cmake_install.cmake")
   include("/home/zzy/c++/毕业设计/app-/server/build/modules/database/cmake_install.cmake")
   include("/home/zzy/c++/毕业设计/app-/server/build/apps/server/cmake_install.cmake")
+  include("/home/zzy/c++/毕业设计/app-/server/build/modules/tests/cmake_install.cmake")
 
 endif()
 

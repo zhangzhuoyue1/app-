@@ -1,5 +1,13 @@
 cmake_minimum_required(VERSION 3.10)
 project(MyServerProject VERSION 1.0.0)
+enable_testing() 
+include(FetchContent)
+FetchContent_Declare(
+    googletest
+    GIT_REPOSITORY https://github.com/google/googletest.git
+    GIT_TAG release-1.12.1
+)
+FetchContent_MakeAvailable(googletest)
 
 # 全局设置
 set(CMAKE_CXX_STANDARD 17)
@@ -17,3 +25,5 @@ endif()
 add_subdirectory(modules/message_parser)
 add_subdirectory(modules/database)
 add_subdirectory(apps/server)
+add_subdirectory(modules/tests)
+
