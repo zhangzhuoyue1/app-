@@ -38,7 +38,6 @@ __pycache__/
 .vscode/
 
 # ========== 项目结构中特定目录 ==========
-NetworkAnalyse/app/
 NetworkAnalyse/build/
 NetworkAnalyse/test/
 mitm/.venv/
