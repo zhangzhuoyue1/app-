@@ -1,0 +1,48 @@
+# 编译相关
+/build/
+/app/CMakeFiles/
+/app/Makefile
+/app/CMakeCache.txt
+/app/*.o
+/app/*.out
+
+# Qt Creator 或 CMake 生成文件（可根据实际情况调整）
+*.pro.user
+*.user
+*.autosave
+*.moc
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.la
+*.lo
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+# 虚拟环境
+.venv/
+.env/
+env/
+venv/
+
+# 日志文件
+*.log
+
+# 临时文件
+*.swp
+*.swo
+*~
+
+# VS Code 配置（保留 .vscode/settings.json 如有需要）
+.vscode/
+
+# 数据文件（可选）
+*.db
+*.sqlite
+
+# 可执行文件
+app/main
