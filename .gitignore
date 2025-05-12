@@ -45,4 +45,4 @@ venv/
 *.sqlite
 
 # 可执行文件
-app/main
+#app/main
