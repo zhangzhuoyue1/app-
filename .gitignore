@@ -1,31 +1,47 @@
-# 忽略构建目录
-/build/
-*/build/
-*/CMakeFiles/
-*/CMakeCache.txt
-*/Makefile
+# ========== 通用 ==========
+*.swp
+*.tmp
+*.log
+*.bak
+*.old
 
-# 忽略库文件
+# ========== CMake 构建目录 ==========
+**/build/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/Makefile
+**/cmake_install.cmake
+**/install_manifest.txt
+
+# ========== 编译生成的目标文件 ==========
+*.out
+*.o
 *.a
 *.so
 *.so.*
 *.dll
-*.lib
-*.dylib
+*.exe
 
-# 忽略可执行文件（无扩展名的一般是 Linux 上编译产物）
+# 排除 app 可执行产物（若命名为 app 或 main）
 */main
 */app
-*/test
 
-# 忽略 Python 相关
+# ========== Python 文件 ==========
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.py[cod]
+*.egg-info/
 .venv/
 .env/
 
-# 忽略 IDE 临时文件
+# ========== VSCode IDE ==========
 .vscode/
-*.swp
+
+# ========== 项目结构中特定目录 ==========
+NetworkAnalyse/app/
+NetworkAnalyse/build/
+NetworkAnalyse/test/
+mitm/.venv/
+mitm/__pycache__/
