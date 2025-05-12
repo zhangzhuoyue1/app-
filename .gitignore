@@ -23,8 +23,6 @@
 *.exe
 
 # 排除 app 可执行产物（若命名为 app 或 main）
-*/main
-*/app
 
 # ========== Python 文件 ==========
 __pycache__/
