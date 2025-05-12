@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/test_parser.dir/test.cpp.o -o ../../../bin/test_parser  -lspdlog::spdlog -lpcap ../../../lib/libgtest_main.a ../../../lib/libgtest.a 

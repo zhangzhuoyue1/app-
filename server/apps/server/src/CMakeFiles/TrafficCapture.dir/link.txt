@@ -1,2 +1,0 @@
-/usr/bin/ar qc libTrafficCapture.a CMakeFiles/TrafficCapture.dir/TrafficCapture/TrafficCapture.cpp.o
-/usr/bin/ranlib libTrafficCapture.a

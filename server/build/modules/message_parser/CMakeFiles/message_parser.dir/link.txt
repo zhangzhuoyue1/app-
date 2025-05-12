@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../lib/libmessage_parser.a CMakeFiles/message_parser.dir/src/AppInfoFetcher.cpp.o CMakeFiles/message_parser.dir/src/TrafficCapture.cpp.o
-/usr/bin/ranlib ../../lib/libmessage_parser.a

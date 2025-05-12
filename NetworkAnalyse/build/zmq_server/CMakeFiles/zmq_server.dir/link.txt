@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libzmq_server.a  CMakeFiles/zmq_server.dir/src/ZmqSubscriber.cpp.o
+/usr/bin/ranlib ../lib/libzmq_server.a
