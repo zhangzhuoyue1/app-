@@ -1,1 +1,0 @@
-/usr/bin/g++  -g   CMakeFiles/network_analyzer_test.dir/test.cpp.o  -o ../bin/network_analyzer_test  ../lib/libzmq_server.a -lpthread /usr/lib/x86_64-linux-gnu/libgtest_main.a /usr/lib/x86_64-linux-gnu/libgtest.a -lpthread /usr/lib/x86_64-linux-gnu/libzmq.so 
