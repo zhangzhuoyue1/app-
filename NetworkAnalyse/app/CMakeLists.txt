@@ -18,7 +18,7 @@ add_executable(app  ${SRC_FILES}  ${HEADER_FILES})
 
 # 链接所有需要的子库
 target_link_libraries(app PUBLIC
-    #message_parse 
+    message_parse 
     mysql 
     Boost::boost       # 头文件
     Boost::system      # Boost系统库

@@ -12,6 +12,10 @@ target_include_directories(message_parse PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
+target_link_libraries(message_parse PUBLIC
+    mysql
+    zmq_server
+)
 # 添加私有依赖（如该库需要第三方组件）
 find_package(spdlog REQUIRED)  # 日志库
 target_link_libraries(message_parse PRIVATE spdlog::spdlog)

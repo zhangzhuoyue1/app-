@@ -9,6 +9,7 @@ namespace http = beast::http;           // from <boost/beast/http.hpp>
 namespace net = boost::asio;            // from <boost/asio.hpp>
 using tcp = boost::asio::ip::tcp;       // from <boost/asio/ip/tcp.hpp>
 
+
 //char 转为16进制
 unsigned char ToHex(unsigned char x);
 
@@ -27,4 +28,14 @@ enum ErrorCodes {
     Success = 0,
     Error_Json = 1001,  //Json解析错误
     RPCFailed = 1002,  //RPC请求错误
+};
+
+enum ReqId{
+    ID_LOGIN_USER = 1001, //登录
+    ID_REG_USER = 1002, //注册用户
+    ID_START=1003,
+    ID_STOP=1004,
+    ID_DELETE_USER=1005,
+    ID_ADD_USER=1006,
+    ID_MODIFY_USER=1007,
 };

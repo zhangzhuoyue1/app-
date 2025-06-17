@@ -1,4 +1,5 @@
 #include "../include/const.h"
+#include <spdlog/spdlog.h>
 
 //char 转为16进制
 unsigned char ToHex(unsigned char x)
@@ -64,4 +65,3 @@ std::string UrlDecode(const std::string& str)
     }
     return strTemp;
 }
-

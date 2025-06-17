@@ -3,6 +3,8 @@
 #include <map>
 #include "const.h"
 #include <MySQLDAO.h>
+#include <TrafficCapture.h>
+#include <ZmqSubscriber.h>
 
 using json = nlohmann::json;
 class HttpConnection;
@@ -25,4 +27,6 @@ private:
     std::map<std::string, HttpHandler>              m_post_handlers;  // POST请求处理器
     std::map<std::string, HttpHandler>              m_get_handlers;   // GET请求处理器
     MySQLDAO                                        m_mysql;          // 数据库对象
+    TrafficCapture*                                 m_traffic_capture; // 流量捕获对象
+    ZMQSubscriber*                                  m_zmq_subscriber;  // ZMQ订阅对象                         
 };

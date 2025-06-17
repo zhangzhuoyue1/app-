@@ -1,45 +1,45 @@
 #pragma once
-#include <cstdlib>
 #include <string>
 #include <thread>
-#include <sys/stat.h>
-#include <pcap.h> //libpcap
+#include <pcap.h>
 #include <spdlog/spdlog.h>
 #include <atomic>
 #include <mutex>
+#include <queue>
+#include <vector>
+#include "PacketParser.h"
 
-// 功能 ： 捕获指定 app 的流量
-//----------------------------------------------------------------
-//  1. 通过配置为桥接模式捕获流量
-//  2. 使用 libpcap 捕获端口流量
-//----------------------------------------------------------------
-
-/*
-libpcap 回调函数
-@param user 参数是 pcap_loop() 的第一个参数
-@param const struct pcap_pkthdr* header 参数是一个指向捕获到的数据包的头部的指针
-@param packet 参数是一个指向捕获到的数据包的内容的指针
-*/
-using HandlerCallBack = void (*)(u_char *, const struct pcap_pkthdr *, const u_char *);
-
+/**
+ * @brief 使用 libpcap 实现指定 IP 流量捕获与队列缓存，供解析模块调用
+ */
 class TrafficCapture
 {
 public:
-    TrafficCapture(const std::string strAppId, const char *ip);
+    /**
+     * @param app_id 应用标识，仅供记录使用
+     * @param ip 要监听的目标 IP（可为 Android 模拟器 IP）
+     */
+    TrafficCapture(const std::string& app_id, const std::string& ip);
     ~TrafficCapture();
 
-    bool StartCapture(HandlerCallBack cb); // 开始捕获
-    void StopCapture();                    // 停止捕获
-private:
-    void ThreadCapture(); // 捕获线程
-    bool SetupIptablesRule(); // 设置iptables规则
-    void GetNetDevices(); // 获取网络设备
+    bool                start_capture(int uid);                     //开始抓包
+    void                stop_capture();                      //停止抓包
+    void                process_packet(const timeval&, const u_char*, size_t); //实际处理函数
+    bool                set_filter(const std::string& ip);   //设置 BPF 过滤器
 
-    const std::string m_app_id;      // app包名
-    const char *m_ip;                // 模拟器ip
-    std::atomic<bool> m_bis_capture; // 是否开始捕获
-    HandlerCallBack m_cb;            // 回调函数
-    pcap_t *m_pcap_handle;           // pcap句柄
-    std::thread m_thread_capture;    // 捕获线程
-    std::mutex m_mutex;              // 互斥锁
+private:
+    void                thread_capture();                    // 工作线程入口
+    static void         pcap_callback(u_char*, const struct pcap_pkthdr*, const u_char*); // libpcap回调
+    void                get_net_devices();                    // 打印设备列表（调试用）
+
+    const std::string               m_app_id;           // 应用id
+    const std::string               m_target_ip;        // 目标ip
+
+    std::atomic<bool>               m_running;          // 运行标志
+    pcap_t*                         m_pcap_handle;      // libpcap 句柄
+    std::thread                     m_capture_thread;   // 工作线程
+
+    std::mutex                      m_queue_mutex;      // 互斥锁
+    PacketParser*                   m_packet_parser;     // 数据包解析器
+    int                             app_uid=10001;
 };

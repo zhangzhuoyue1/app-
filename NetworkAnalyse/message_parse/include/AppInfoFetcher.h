@@ -1,7 +1,9 @@
 #pragma once
 #include <unordered_map>
+#include <map>
 #include <string>
 #include <vector>
+
 class AppInfoFetCher
 {
 public:
@@ -10,6 +12,8 @@ public:
     void fetchAllPackages();                                     // 全量获取包名并构建映射
     std::string getUidByPackage(const std::string &packageName); // 通过包名获取uid
     std::vector<std::string> getAllPackageNames() const;         // 获取当前已缓存的包名列表
+
+    std::map<std::string, int> getAllPackageUidMap();            // 获取包名-UID 映射
 
 private:
     std::string m_strAdbPath;                   // adb路径

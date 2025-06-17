@@ -6,6 +6,7 @@
 AppInfoFetCher::AppInfoFetCher(const std::string &adbPath)
     : m_strAdbPath(adbPath)
 {
+   
 }
 
 void AppInfoFetCher::fetchAllPackages()
@@ -98,4 +99,25 @@ void AppInfoFetCher::ParsePackageName(const std::string &rawOutput)
             }
         }
     }
+}
+
+std::map<std::string, int> AppInfoFetCher::getAllPackageUidMap()
+{
+    std::map<std::string, int> packageUidMap;
+
+    for (const std::string &pkgName : m_vecPackageNames)
+    {
+        std::string uidStr = getUidByPackage(pkgName);
+        try
+        {
+            int uid = std::stoi(uidStr);
+            packageUidMap[pkgName] = uid;
+        }
+        catch (const std::exception &e)
+        {
+            spdlog::warn("[AppInfoFetcher] Failed to parse UID for package {}: {}", pkgName, e.what());
+        }
+    }
+
+    return packageUidMap;
 }
